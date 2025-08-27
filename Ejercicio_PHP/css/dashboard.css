@@ -1,0 +1,117 @@
+/* Manteniendo la base de estilos original */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e2e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.dashboard {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    color: #0e2002;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Estilos para los enlaces principales (ABMC) */
+.dashboard-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.boton.abmc {
+    display: block;
+    background-color: #82fa66;
+    color: #0e2002;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.boton.abmc:hover {
+    background-color: #ffee55;
+    border-color: #0e2002;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los enlaces de acción */
+.dashboard-actions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #e2e2e2;
+}
+
+.dashboard-actions a {
+    color: #0e2002;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.dashboard-actions a:hover {
+    color: #82fa66;
+    text-decoration: none;
+    background-color: rgba(130, 250, 102, 0.1);
+}
+
+/* Enlace de cerrar sesión con estilo diferente */
+.dashboard-actions a[href="../index.php"],
+.dashboard-actions a[href="../dashboard.html"]{
+    color: #757873;
+}
+
+.dashboard-actions a[href="../index.php"]:hover
+.dashboard-actions a[href="../dashboard.html"]:hover {
+    color: #0e2002;
+    background-color: rgba(117, 120, 115, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .dashboard {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .dashboard-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .dashboard-actions a {
+        text-align: center;
+        padding: 10px;
+    }
+}

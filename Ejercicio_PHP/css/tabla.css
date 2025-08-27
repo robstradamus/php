@@ -1,0 +1,182 @@
+/* tabla.css - Estilos para tablas de visualización de datos */
+
+/* Contenedor principal */
+body > div {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Título */
+h2 {
+    color: #0e2002;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #82fa66;
+}
+
+/* ENLACE VOLVER - ESTILO ESPECÍFICO */
+.volver-container {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.volver-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    color: #0e2002;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e2e2;
+}
+
+.volver-container a:hover {
+    background-color: #82fa66;
+    color: #0e2002;
+    text-decoration: none;
+    border-color: #0e2002;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #e2e2e2;
+}
+
+th {
+    background-color: #82fa66;
+    color: #0e2002;
+    font-weight: 600;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: rgba(130, 250, 102, 0.1);
+}
+
+/* Estilos para los enlaces de acción */
+.accion-enlace {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 13px;
+    text-align: center;
+}
+
+.modificar {
+    background-color: #ffee55;
+    color: #0e2002;
+    border: 1px solid #d4c100;
+}
+
+.modificar:hover {
+    background-color: #e6d44d;
+    text-decoration: none;
+}
+
+.eliminar {
+    background-color: #ff6b6b;
+    color: white;
+    border: 1px solid #e05a5a;
+}
+
+.eliminar:hover {
+    background-color: #e05a5a;
+    text-decoration: none;
+}
+
+/* Mensaje cuando no hay registros */
+.no-registros {
+    text-align: center;
+    padding: 30px;
+    color: #757873;
+    font-style: italic;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+/* Responsive para tablas */
+@media screen and (max-width: 768px) {
+    body > div {
+        padding: 15px;
+        margin: 10px;
+        width: auto;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    
+    .accion-enlace {
+        padding: 4px 8px;
+        font-size: 12px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .volver-container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+    
+    .volver-container {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .volver-container a {
+        padding: 8px 15px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    th, td {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+}
