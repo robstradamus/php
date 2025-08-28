@@ -1,0 +1,116 @@
+/* Contenedor general de las tablas */
+.table-container {
+  max-width: 950px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--color-muted);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* Titulos de la tabla */
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+  font-size: 1.5rem;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Encabezados */
+th {
+    padding: 0.8rem;
+    background: #007b8f; /* azul más oscuro */
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid var(--color-muted);
+}
+
+
+/* Filas de datos */
+td {
+  padding: 0.8rem;
+  text-align: center;
+  border: 1px solid var(--color-muted);
+}
+
+/* Alternar color de filas */
+tr:nth-child(even) {
+  background-color: var(--color-accent);
+}
+
+/* Formularios dentro de las celdas centrados */
+td form {
+  margin: 0;
+}
+
+/* Botones de acción dentro de la tabla (si se agregan) */
+input[type="submit"] {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+  font-size: 0.9rem;
+}
+
+/* Estilo consistente para inputs, selects y textarea */
+input,
+select,
+textarea {
+    padding: 0.6rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-muted);
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 0.8rem; 
+}
+
+/* Botones de tipo submit con color llamativo */
+input[type="submit"] {
+    background-color: #28a745; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out, transform 0.15s;
+}
+
+/* Efecto hover */
+input[type="submit"]:hover {
+    background-color: #218838;
+    transform: scale(1.03);
+}
+
+
+/* Botón Volver Atrás */
+a[href="dashboard.html"], .btn-back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  background-color: #091e2c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+a[href="dashboard.html"]:hover, .btn-back:hover {
+  background-color: #747a7e;
+}

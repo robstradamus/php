@@ -1,0 +1,72 @@
+.table-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--color-muted);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+/* Título del listado */
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+/* Encabezados y celdas */
+th, td {
+  padding: 0.8rem;
+  text-align: center;
+  border: 1px solid var(--color-muted);
+}
+th {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Links de acciones */
+a.action-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #fff;
+  transition: opacity 0.2s ease-in-out;
+}
+a.edit {
+  background-color: #4CAF50; 
+}
+a.delete {
+  background-color: #E74C3C; 
+}
+a.action-link:hover {
+  opacity: 0.85;
+}
+/* Botón "Volver Atrás" */
+.btn-back {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  background-color: #091e2c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn-back:hover {
+  background-color: #747a7e;
+}
