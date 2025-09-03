@@ -6,9 +6,9 @@ Este repositorio contiene ejercicios prácticos desarrollados con **PHP**, **HTM
 
 ## 📁 ESTRUCTURA DEL REPOSITORIO
 
-`php/` => Contiene el codigo fuente divido por ejercicios
-`docs_php/` => Contiene los archivos PDF con los ejercicios
-`img_php/` => Captura de pantalla de los ejercicios
+- `php/` => Contiene el codigo fuente divido por ejercicios
+- `docs_php/` => Contiene los archivos PDF con los ejercicios
+- `img_php/` => Captura de pantalla de los ejercicios
 
 ---
 
