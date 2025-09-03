@@ -36,10 +36,10 @@ Se puede importar fácilmente desde **phpMyAdmin** o cualquier otro cliente MySQ
 
 ## 📄 EJERCICIOS EN PDF
 
--[Ejercicio 1](docs_php/Ejercicio1_PHP_MySQL.pdf)
+- [**Ejercicio 1**](docs_php/Ejercicio1_PHP_MySQL.pdf)
 Sistema de **Gestion de Automoviles** que permite registrar, listar, modificar y eliminar automóviles. Incluye login de usuario y validaciones.
 
--[Ejercicio 2](docs_php/Ejercicio2_PHP_MySQL.pdf)
+- [**Ejercicio 2**](docs_php/Ejercicio2_PHP_MySQL.pdf)
 Sistema de **Gestion de Biblioteca** que permite el alta, modificación, eliminación y consulta de libros. También cuenta con inicio de sesión y validaciones.
 
 ---
